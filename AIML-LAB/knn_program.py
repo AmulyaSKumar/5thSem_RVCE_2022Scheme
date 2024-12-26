@@ -45,7 +45,16 @@ for test_point in X_test:
 accuracy = np.sum(y_pred == y_test) / len(y_test)
 print(f"KNN Accuracy: {accuracy:.2f}")
 
-# Example: Predicting a new sample
-new_sample = np.array([5.0, 3.6, 1.4, 0.2])  # Example input
+# Example: Predicting a new sample with user input
+print("\nEnter the features for the new Iris flower sample:")
+sepal_length = float(input("Sepal length (cm): "))
+sepal_width = float(input("Sepal width (cm): "))
+petal_length = float(input("Petal length (cm): "))
+petal_width = float(input("Petal width (cm): "))
+
+# Create the new sample from user input
+new_sample = np.array([sepal_length, sepal_width, petal_length, petal_width])
+
+# Predict the class for the new sample
 predicted_class = knn_predict(X_train, y_train, new_sample, k)
-print(f"Predicted class for the sample: {iris.target_names[predicted_class]}")
+print(f"\nPredicted class for the sample: {iris.target_names[predicted_class]}")
