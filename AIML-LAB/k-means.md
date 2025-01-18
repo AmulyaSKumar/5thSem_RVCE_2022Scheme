@@ -1,8 +1,6 @@
-K-Means Clustering Implementation
+#K-Means Clustering Implementation
 
 ## Installation
-Ensure you have Python installed on your system. Then, install the required packages:
-
 ```bash
 pip install  matplotlib scikit-learn
 ```
@@ -53,12 +51,7 @@ plt.show()
 ---
 
 ## Output
-When the code is executed, you will see a scatter plot showing the data points grouped into 3 clusters, with different colors representing each cluster. The final centroids are marked with black "X" symbols.
-
-Example of the expected output:
-
-- Red, green, and blue points represent the 3 clusters.
-- Black "X" marks the centroids of the clusters.
+When the code is executed, we will get a scatter plot showing the data points grouped into 3 clusters, with different colors representing each cluster. The final centroids are marked with black "X" symbols.
 
 ---
 
