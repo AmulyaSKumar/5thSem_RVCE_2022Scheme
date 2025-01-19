@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-pip install  matplotlib scikit-learn
+pip install  matplotlib scikit-learn numpy
 ```
 
 ---
@@ -19,7 +19,6 @@ X = iris.data  # Features (sepal length, sepal width, petal length, petal width)
 
 def kmeans(X, k):
     centroids = X[np.random.choice(X.shape[0], k, replace=False)]
-
     for _ in range(100):
         distances = np.linalg.norm(X[:, None] - centroids, axis=2)
         labels = np.argmin(distances, axis=1)
@@ -36,7 +35,7 @@ colors = ['r', 'g', 'b']
 
 # Plot the original data points with different colors for each cluster
 for i in range(k):
-    plt.scatter(X[labels == i, 0], X[labels == i, 1], c=colors[i], label=f'Cluster {i+1}')
+    plt.scatter(X[labels == i, 0], X[labels == i, 1], c=colors[i], label=f'Cluster {i+1}') #plots scatter plot for a cluster taking firest n second features in dataset
 
 # Plot the final cluster centroids
 plt.scatter(centroids[:, 0], centroids[:, 1], marker='x', c='black', label='Centroids')
@@ -53,7 +52,7 @@ plt.show()
 ## Output
 When the code is executed, we will get a scatter plot showing the data points grouped into 3 clusters, with different colors representing each cluster. The final centroids are marked with black "X" symbols.
 
----
+
 
 ## Advantages of K-Means
 1. **Simplicity**: Easy to understand and implement.
@@ -71,6 +70,14 @@ When the code is executed, we will get a scatter plot showing the data points gr
 
 ---
 
+## About Dataset
+- Iris Flower Dataset 
+- Number of Features: 4 (Sepal length ,Sepal width,Petal length,Petal width )
+- Number of Numerical Data Points: 4 features per sample × 150 samples = 600 numerical values (but for k means we are using only speal length n width)
+- Number of Categorical Data Points: 150 (target labels) (species: Setosa, Versicolor, Virginica)
+- Number of Targets: 1 (species classification with 3 classes)
+- Total Data Points: 750 (600 numerical + 150 categorical)
+ ---
 ## Viva Questions
 1. **What is K-Means clustering?**
    - K-Means is an unsupervised machine learning algorithm that groups data into k clusters by minimizing the variance within each cluster.
