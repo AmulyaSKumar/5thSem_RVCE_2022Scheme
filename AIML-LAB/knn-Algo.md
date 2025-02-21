@@ -118,7 +118,6 @@ Sepal length (cm): 5.1
 Sepal width (cm): 3.5
 Petal length (cm): 1.4
 Petal width (cm): 0.2
-KNN Accuracy: 1.00
 Predicted class for the sample: setosa
 ```
 
