@@ -1,7 +1,7 @@
 # Tic-Tac-Toe Using Depth-First Search (DFS)
 
 ## Introduction
-This project implements a Tic-Tac-Toe game where the AI uses Depth-First Search (DFS) to determine the best move. The game is played on a 3x3 grid between a human player and an AI. The AI employs DFS to explore all possible game states and select the optimal move.
+Implements a Tic-Tac-Toe game where the AI uses Depth-First Search (DFS) to determine the best move. The game is played on a 3x3 grid between a human player and an AI. The AI employs DFS to explore all possible game states and select the optimal move.
 
 ## Explanation of the Program
 
@@ -34,8 +34,8 @@ The function `get_user_input(board)` takes user input, ensuring it is within val
 - The AI calculates the best move using DFS.
 - The process continues until the user or AI wins, or the game ends in a draw.
 
-##Code
-```
+## Code
+```python
 def initialize_board():
     return [[' ' for _ in range(3)] for _ in range(3)]
 
@@ -183,22 +183,12 @@ if __name__ == "__main__":
 5. **How can we improve AI efficiency in Tic-Tac-Toe?**
    - Using Minimax with Alpha-Beta pruning can optimize decision-making by eliminating unnecessary computations.
 
-6. **Can DFS be used in real-time strategy games? Why or why not?**
-   - No, because real-time games require fast decision-making, and DFS is computationally expensive for large state spaces.
-
-7. **What are alternative algorithms to DFS for decision-making in games?**
-   - Minimax, Alpha-Beta Pruning, Monte Carlo Tree Search, and Reinforcement Learning.
-
-8. **What happens if we increase the board size to 4x4 or 5x5?**
-   - The number of possible states increases exponentially, making DFS inefficient and slow.
-
-9. **How does the AI differentiate between a winning and losing move?**
-   - It assigns scores (1 for AI win, -1 for user win, 0 for draw) and selects moves that maximize AI's chances.
-
-10. **What is the role of recursion in DFS?**
+6. **What is the role of recursion in DFS?**
     - Recursion allows DFS to explore all game states systematically by backtracking after evaluating each move.
 
-11. **Why always eithwe AI wins or game results in draw?**
-   - Due to the way DFS is implemented. The AI always picks the best possible move, meaning it never makes a mistake. In Tic-Tac-Toe, if a player never makes a mistake, they will never lose. If both players play optimally, the game will always end in a draw. However, since the AI always plays optimally while the human player might make mistakes, the AI will take advantage of those mistakes and win.
+7. **Why always either AI wins or game results in draw?**
+   - Due to the way DFS is implemented. The AI always picks the best possible move, meaning it never makes a mistake. In Tic-Tac-Toe, if a player never makes a mistake, they will never 
+     lose. If both players play optimally, the game will always end in a draw. However, since the AI always plays optimally while the human player might make mistakes, the AI will take 
+     advantage of those mistakes and win.
 
 
