@@ -1,65 +1,53 @@
+from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 
-# Sigmoid function
 def sigmoid(z):
-    return 1 / (1 + np.exp(-z))
+    return 1.0 / (1.0 + np.exp(-z))
 
-# Logistic Regression model
-class LogisticRegression:
-    def __init__(self, learning_rate=0.01, epochs=1000):
-        self.learning_rate = learning_rate
-        self.epochs = epochs
-        self.weights = None
-        self.bias = None
+def logistic_regression(X, y, num_iterations=200, learning_rate=0.001):
+    X = np.hstack([np.ones((X.shape[0], 1)), X])  # Add bias term
+    weights = np.zeros(X.shape[1])  # Initialize weights
+    for _ in range(num_iterations):
+        z = np.dot(X, weights)  # z = X * weights
+        h = sigmoid(z)  # Sigmoid of z
+        gradient = np.dot(X.T, (h - y)) / y.shape[0]  # Gradient of loss
+        weights -= learning_rate * gradient  # Update weights
+    return weights
 
-    def fit(self, X, y):
-        n_samples, n_features = X.shape
-        self.weights = np.zeros(n_features)
-        self.bias = 0
+def predict(input_data, weights, scaler):
+    input_data_std = scaler.transform(input_data) 
+    input_data_std = np.hstack([np.ones((input_data_std.shape[0], 1)), input_data_std])  
+    prediction = sigmoid(np.dot(input_data_std, weights)) > 0.5  
+    return "Setosa" if prediction[0] == 0 else "Versicolor"
 
-        for _ in range(self.epochs):
-            linear_model = np.dot(X, self.weights) + self.bias
-            y_predicted = sigmoid(linear_model)
+# Load Iris dataset
+iris = load_iris()
+X = iris.data  # All features
+y = iris.target  # All labels
 
-            dw = (1 / n_samples) * np.dot(X.T, (y_predicted - y))
-            db = (1 / n_samples) * np.sum(y_predicted - y)
+# Filter to only include Setosa (label 0) and Versicolor (label 1)
+mask = (y == 0) | (y == 1)
+X = X[mask]
+y = y[mask]
 
-            self.weights -= self.learning_rate * dw
-            self.bias -= self.learning_rate * db
+# Standardize features using the entire dataset
+sc = StandardScaler()
+X_std = sc.fit_transform(X)
 
-    def predict(self, X):
-        linear_model = np.dot(X, self.weights) + self.bias
-        y_predicted = sigmoid(linear_model)
-        return [1 if i > 0.5 else 0 for i in y_predicted]
+# Perform logistic regression on the full dataset
+weights = logistic_regression(X_std, y)
 
-# Function to take user input for the dataset
-def get_user_input():
-    num_samples = int(input("Enter the number of samples: "))
-    num_features = int(input("Enter the number of features: "))
+# User input for prediction
+sepal_len = float(input("Enter sepal length: "))
+sepal_width = float(input("Enter sepal width: "))
+petal_len = float(input("Enter petal length: "))
+petal_width = float(input("Enter petal width: "))
 
-    print("\nEnter the feature values row by row (space-separated):")
-    X = []
-    for _ in range(num_samples):
-        row = list(map(float, input().split()))
-        X.append(row)
+# Prepare user input
+user_input = np.array([[sepal_len, sepal_width, petal_len, petal_width]])
 
-    print("\nEnter the corresponding labels (0 or 1):")
-    y = list(map(int, input().split()))
+# Use the predict function
+result = predict(user_input, weights, sc)
 
-    return np.array(X), np.array(y)
-
-if __name__ == "__main__":
-    # User inputs the dataset
-    X, y = get_user_input()
-
-    # Create and train the model
-    model = LogisticRegression(learning_rate=0.1, epochs=1000)
-    model.fit(X, y)
-
-    # Take user input for prediction
-    print("\nEnter a new data point for prediction (space-separated values):")
-    new_data = np.array(list(map(float, input().split()))).reshape(1, -1)
-
-    # Predict and output the result
-    prediction = model.predict(new_data)
-    print(f"Prediction for the input data point: {prediction[0]}")
+print(f"Prediction: {result}")
