@@ -1,5 +1,3 @@
-import numpy as np
-
 
 def hill_climbing(func, start, step_size=0.01, max_iterations=1000):
     current_position = start

@@ -132,7 +132,7 @@ Solution found!
 
 ---
 
-## Viva Questions
+## Few Questions
 1. **What is the A * algorithm, and why is it widely used?**
    - A* is a pathfinding and graph traversal algorithm that guarantees an optimal solution by combining cost-so-far (g) and heuristic cost (h). It is widely used due to its efficiency and versatility.
 
@@ -143,8 +143,8 @@ Solution found!
    - Admissible heuristics never overestimate the actual cost, ensuring optimality. Consistent heuristics satisfy the triangle inequality and guarantee efficient search without revisiting nodes.
 
 4. **What is the time and space complexity of the A * algorithm?**
-   - Time complexity: \( O(b^d) \) in the worst case, where \( b \) is the branching factor and \( d \) is the depth of the solution.
-   - Space complexity: \( O(b^d) \) as it stores all explored and frontier nodes.
+   - Time complexity: ( O(b^d) ) in the worst case, where ( b) is the branching factor and ( d) is the depth of the solution.
+   - Space complexity:( O(b^d) ) as it stores all explored and frontier nodes.
 
 5. **How does the `misplaced_tiles` heuristic work, and why is it effective for the 8-puzzle problem?**
    - It counts the number of tiles out of place compared to the goal state. It is simple, fast to compute, and provides a reasonable estimate of the remaining cost.
@@ -160,6 +160,9 @@ Solution found!
 
 9. **Can A* handle negative edge weights? Why or why not?**
     - No, A* cannot handle negative edge weights as it assumes all edge costs are non-negative. Negative weights may lead to incorrect estimates and suboptimal solutions.
+
+10. How does iterative deepening A (IDA) improve upon traditional A*?**
+    - IDA* reduces memory usage by performing depth-limited searches iteratively.
 
 - **Applications**: Pathfinding in robotics, AI-based games, and optimization problems.
 

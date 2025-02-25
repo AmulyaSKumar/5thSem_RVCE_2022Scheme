@@ -26,6 +26,7 @@ def build_tree(flat_tree, depth):
             children.append(None)  # Add None for missing nodes
     return children
 
+
 flattened_tree = list(map(int, input("Enter the flattened game tree (space-separated): ").split()))
 depth = int(input("Enter the depth of the tree: "))
 game_tree = build_tree(flattened_tree, depth)
