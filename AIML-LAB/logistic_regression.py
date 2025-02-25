@@ -47,7 +47,7 @@ def get_user_input():
     y = list(map(int, input().split()))
 
     return np.array(X), np.array(y)
-
+f
 if __name__ == "__main__":
     # User inputs the dataset
     X, y = get_user_input()
