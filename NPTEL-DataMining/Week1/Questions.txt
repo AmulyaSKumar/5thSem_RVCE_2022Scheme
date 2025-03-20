@@ -1,0 +1,215 @@
+# Data Mining - Week 1 MCQs
+
+## Introduction: KDD Process
+
+**Q1: What does KDD stand for in the context of Data Mining?**
+
+A) Knowledge Discovery in Databases  
+B) Knowledge Data Development  
+C) Key Data Derivation  
+D) Knowledge Decision Design  
+
+**Answer:** A) Knowledge Discovery in Databases
+
+**Q2: Which of the following is NOT a step in the KDD process?**
+
+A) Data Cleaning  
+B) Data Integration  
+C) Model Deployment  
+D) Data Visualization  
+
+**Answer:** C) Model Deployment
+
+---
+
+## Data Preprocessing
+
+**Q3: What is the main goal of data preprocessing in data mining?**
+
+A) To store data in multiple formats  
+B) To enhance data quality and improve mining accuracy  
+C) To delete unnecessary data records  
+D) To increase data redundancy  
+
+**Answer:** B) To enhance data quality and improve mining accuracy
+
+**Q4: Which of the following is NOT a data preprocessing technique?**
+
+A) Normalization  
+B) Data Reduction  
+C) Data Splitting  
+D) Data Transformation  
+
+**Answer:** C) Data Splitting
+
+---
+
+## Association Rule Mining
+
+**Q5: In association rule mining, what does "support" measure?**
+
+A) The strength of an association rule  
+B) The probability of itemsets appearing together  
+C) The confidence level of an itemset  
+D) The unexpectedness of a rule  
+
+**Answer:** B) The probability of itemsets appearing together
+
+**Q6: Which algorithm is commonly used for association rule mining?**
+
+A) K-Means  
+B) Apriori  
+C) Decision Tree  
+D) SVM  
+
+**Answer:** B) Apriori
+
+---
+
+## Classification
+
+**Q7: What is the primary objective of classification in data mining?**
+
+A) To divide data into random clusters  
+B) To predict categorical labels  
+C) To find association rules  
+D) To analyze numerical data distributions  
+
+**Answer:** B) To predict categorical labels
+
+**Q8: Which of the following is NOT a classification algorithm?**
+
+A) Decision Tree  
+B) Naïve Bayes  
+C) K-Means  
+D) Random Forest  
+
+**Answer:** C) K-Means
+
+---
+
+## Clustering and Anomaly Detection
+
+**Q9: Which clustering algorithm uses the concept of centroids?**
+
+A) K-Means  
+B) DBSCAN  
+C) Apriori  
+D) Random Forest  
+
+**Answer:** A) K-Means
+
+**Q10: What is anomaly detection used for?**
+
+A) Grouping similar data points  
+B) Finding patterns in data  
+C) Identifying unusual data points  
+D) Reducing the dataset size  
+
+**Answer:** C) Identifying unusual data points
+
+---
+
+## Regression
+
+**Q11: What is the purpose of regression in data mining?**
+
+A) To classify categorical data  
+B) To analyze relationships between variables  
+C) To cluster similar records  
+D) To find association rules  
+
+**Answer:** B) To analyze relationships between variables
+
+**Q12: Which of the following is NOT a type of regression?**
+
+A) Linear Regression  
+B) Logistic Regression  
+C) K-Means Regression  
+D) Ridge Regression  
+
+**Answer:** C) K-Means Regression
+
+---
+
+## Case Studies
+
+**Q13: Which real-world application is an example of association rule mining?**
+
+A) Spam detection  
+B) Market basket analysis  
+C) Image classification  
+D) Time series forecasting  
+Answer: B) Market basket analysis
+
+Q14: In fraud detection, which technique is commonly used?
+
+A) Clustering  
+B) Anomaly Detection  
+C) Regression  
+D) Association Rule Mining  
+
+Answer: B) Anomaly Detection
+
+2. In the context of data preprocessing, what does the term 'normalization' refer to?
+
+A) Reducing data redundancy
+B) Transforming data to fall within a specific range
+C) Identifying and handling missing values
+D) Aggregating data
+
+Answer: B) Transforming data to fall within a specific range
+
+3. Which metric is used to measure the strength of an association rule in association rule mining?
+
+A) Support
+B) Confidence
+C) Lift
+D) All of the above
+
+Answer: D) All of the above
+
+4. In classification, which of the following algorithms is based on the concept of learning by example?
+
+A) K-Means
+B) Decision Tree
+C) Apriori
+D) DBSCAN
+
+Answer: B) Decision Tree
+
+5. What is the primary goal of clustering in data mining?
+
+A) Predicting future trends
+B) Grouping similar data points together
+C) Detecting anomalies
+D) Reducing data dimensionality
+
+Answer: B) Grouping similar data points together
+
+6. In anomaly detection, which of the following is considered an anomaly?
+
+A) A data point that significantly deviates from the majority of the data
+B) A data point that fits well within the data distribution
+C) A data point that is missing
+D) A data point that is duplicated
+
+Answer: A) A data point that significantly deviates from the majority of the data
+
+7. Which regression technique is suitable for predicting a binary outcome?
+
+A) Linear Regression
+B) Logistic Regression
+C) Polynomial Regression
+D) Ridge Regression
+
+Answer: B) Logistic Regression
+
+8. In the KDD process, what is the main purpose of data integration?
+
+A) Combining data from multiple sources into a coherent data store
+B) Cleaning data to remove noise and inconsistencies
+C) Transforming data into suitable formats for mining
+D) Visualizing data patterns
+
+Answer: A) Combining data from multiple sources into a coherent data store
