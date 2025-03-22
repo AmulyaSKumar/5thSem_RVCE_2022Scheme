@@ -1,103 +1,75 @@
-# Data Mining - Week 1 MCQs
-
-## Introduction: KDD Process
-
-**Q1: What does KDD stand for in the context of Data Mining?**
+Q1: What does KDD stand for in the context of Data Mining?
 
 A) Knowledge Discovery in Databases  
 B) Knowledge Data Development  
 C) Key Data Derivation  
 D) Knowledge Decision Design  
 
-**Answer:** A) Knowledge Discovery in Databases
+Answer A) Knowledge Discovery in Databases
 
-**Q2: Which of the following is NOT a step in the KDD process?**
+Q2: Which of the following is NOT a step in the KDD process?
 
 A) Data Cleaning  
 B) Data Integration  
 C) Model Deployment  
 D) Data Visualization  
 
-**Answer:** C) Model Deployment
+Answer: C) Model Deployment
 
----
-
-## Data Preprocessing
-
-**Q3: What is the main goal of data preprocessing in data mining?**
+Q3: What is the main goal of data preprocessing in data mining?
 
 A) To store data in multiple formats  
 B) To enhance data quality and improve mining accuracy  
 C) To delete unnecessary data records  
 D) To increase data redundancy  
 
-**Answer:** B) To enhance data quality and improve mining accuracy
+Answer: B) To enhance data quality and improve mining accuracy
 
-**Q4: Which of the following is NOT a data preprocessing technique?**
+Q4: Which of the following is NOT a data preprocessing technique?
 
 A) Normalization  
 B) Data Reduction  
 C) Data Splitting  
 D) Data Transformation  
 
-**Answer:** C) Data Splitting
+Answer: C) Data Splitting
 
----
-
-## Association Rule Mining
-
-**Q5: In association rule mining, what does "support" measure?**
+Q5: In association rule mining, what does "support" measure?
 
 A) The strength of an association rule  
 B) The probability of itemsets appearing together  
 C) The confidence level of an itemset  
 D) The unexpectedness of a rule  
 
-**Answer:** B) The probability of itemsets appearing together
+Answer: B) The probability of itemsets appearing together
 
-**Q6: Which algorithm is commonly used for association rule mining?**
+Q6: Which algorithm is commonly used for association rule mining?
 
 A) K-Means  
 B) Apriori  
 C) Decision Tree  
 D) SVM  
 
-**Answer:** B) Apriori
+Answer: B) Apriori
 
----
-
-## Classification
-
-**Q7: What is the primary objective of classification in data mining?**
+Q7: What is the primary objective of classification in data mining?
 
 A) To divide data into random clusters  
 B) To predict categorical labels  
 C) To find association rules  
 D) To analyze numerical data distributions  
 
-**Answer:** B) To predict categorical labels
+Answer: B) To predict categorical labels
 
-**Q8: Which of the following is NOT a classification algorithm?**
+Q8: Which of the following is NOT a classification algorithm?
 
 A) Decision Tree  
 B) Naïve Bayes  
 C) K-Means  
 D) Random Forest  
 
-**Answer:** C) K-Means
+Answer: C) K-Means
 
----
-
-## Clustering and Anomaly Detection
-
-**Q9: Which clustering algorithm uses the concept of centroids?**
-
-A) K-Means  
-B) DBSCAN  
-C) Apriori  
-D) Random Forest  
-
-**Answer:** A) K-Means
 
 **Q10: What is anomaly detection used for?**
 
@@ -106,35 +78,9 @@ B) Finding patterns in data
 C) Identifying unusual data points  
 D) Reducing the dataset size  
 
-**Answer:** C) Identifying unusual data points
+Answer:** C) Identifying unusual data points
 
----
-
-## Regression
-
-**Q11: What is the purpose of regression in data mining?**
-
-A) To classify categorical data  
-B) To analyze relationships between variables  
-C) To cluster similar records  
-D) To find association rules  
-
-**Answer:** B) To analyze relationships between variables
-
-**Q12: Which of the following is NOT a type of regression?**
-
-A) Linear Regression  
-B) Logistic Regression  
-C) K-Means Regression  
-D) Ridge Regression  
-
-**Answer:** C) K-Means Regression
-
----
-
-## Case Studies
-
-**Q13: Which real-world application is an example of association rule mining?**
+Q13: Which real-world application is an example of association rule mining?
 
 A) Spam detection  
 B) Market basket analysis  
@@ -196,15 +142,6 @@ D) A data point that is duplicated
 
 Answer: A) A data point that significantly deviates from the majority of the data
 
-7. Which regression technique is suitable for predicting a binary outcome?
-
-A) Linear Regression
-B) Logistic Regression
-C) Polynomial Regression
-D) Ridge Regression
-
-Answer: B) Logistic Regression
-
 8. In the KDD process, what is the main purpose of data integration?
 
 A) Combining data from multiple sources into a coherent data store
@@ -213,3 +150,120 @@ C) Transforming data into suitable formats for mining
 D) Visualizing data patterns
 
 Answer: A) Combining data from multiple sources into a coherent data store
+
+1. Which of the following best describes the primary goal of data mining?
+
+a) Storing large datasets
+b) Retrieving specific data points
+c) Extracting patterns and knowledge from large datasets
+d) Ensuring data privacy​
+
+Answer: c) Extracting patterns and knowledge from large datasets
+
+2. In the Knowledge Discovery in Databases (KDD) process, which step involves finding patterns within data?
+
+a) Data Cleaning
+b) Data Integration
+c) Data Mining
+d) Data Selection​
+Answer: c) Data Mining​
+
+3. What is the main purpose of data preprocessing in data mining?
+
+a) To visualize data
+b) To prepare raw data for analysis by cleaning and transforming it
+c) To store data efficiently
+d) To generate reports​
+Answer: b) To prepare raw data for analysis by cleaning and transforming it​
+
+4. Which of the following is NOT a common data preprocessing technique?
+
+a) Data Cleaning
+b) Data Integration
+c) Data Replication
+d) Data Reduction
+Answer: c) Data Replication​
+
+5. During data cleaning, how are missing values commonly handled?
+
+a) By ignoring the missing data records
+b) By filling in missing values using mean or median
+c) By using a global constant to fill missing values
+d) All of the above​
+Answer: d) All of the above​
+
+6. What does data integration involve in the context of data preprocessing?
+
+a) Combining data from multiple sources into a coherent dataset
+b) Removing duplicate records from a dataset
+c) Transforming data into a different format
+d) Reducing the size of the dataset​
+
+Answer: a) Combining data from multiple sources into a coherent dataset​
+
+7. Which technique is used to reduce the number of attributes in a dataset?
+
+a) Data Cleaning
+b) Dimensionality Reduction
+c) Data Integration
+d) Data Loading​
+Answer: b) Dimensionality Reduction​
+
+8. The "curse of dimensionality" refers to which problem in data mining?
+
+a) Data becoming too sparse as the number of dimensions increases
+b) Difficulty in data visualization
+c) Increased computational cost with more dimensions
+d) All of the above​
+Answer: d) All of the above​
+
+9. What is the purpose of data discretization in preprocessing?
+
+a) To convert continuous data into categorical data
+b) To normalize data values
+c) To integrate multiple datasets
+d) To reduce data redundancy​
+Answer: a) To convert continuous data into categorical data​
+
+11. In data preprocessing, what is binning used for?
+
+a) To smooth noisy data
+b) To discretize continuous data
+c) To handle missing values
+d) Both a) and b)​
+Answer: d) Both a) and b)​
+
+12. Which data transformation technique adjusts data to a standard scale with a mean of zero and a standard deviation of one?
+
+a) Min-max normalization
+b) Z-score normalization
+c) Decimal scaling
+d) Logarithmic transformation​
+
+Answer: b) Z-score normalization​
+
+13. What is the main goal of feature selection in data preprocessing?
+
+a) To create new features from existing ones
+b) To select a subset of relevant features for model building
+c) To reduce the number of data records
+d) To discretize continuous features​
+
+Answer: b) To select a subset of relevant features for model building​
+
+14. Which of the following is a potential consequence of high-dimensional data?
+
+a) Overfitting of models
+b) Increased computational complexity
+c) Difficulty in data visualization
+d) All of the above​
+
+Answer: d) All of the above​
+
+15. In the context of data attributes, which of the following is true for ratio attributes?
+
+a) They have a true zero point and allow for meaningful comparison of magnitudes
+b) They represent categories without any order
+c) They represent ordered categories with unknown distances between them
+d) They have arbitrary zero points
+Answer: a)

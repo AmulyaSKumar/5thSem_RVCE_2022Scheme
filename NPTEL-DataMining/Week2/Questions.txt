@@ -1,0 +1,863 @@
+1. Which of the following is TRUE about the Apriori Algorithm?
+a) It is used to generate association rules from transaction data.
+b) It follows a bottom-up approach for rule generation.
+c) The support of an itemset always increases as new items are added.
+d) Both (a) and (b).
+
+Answer:  d) Both (a) and (b)
+
+2. What is the purpose of entropy in decision tree construction?
+a) To measure the homogeneity of a dataset.
+b) To maximize the number of attributes used in splitting.
+c) To ensure that every class label has equal probability.
+d) To randomly select the best split at each node.
+
+Answer:  a) To measure the homogeneity of a dataset.
+
+3. Which of the following conditions indicates overfitting in a decision tree?
+a) The model performs well on training data but poorly on test data.
+b) The decision tree is very shallow and has only a few splits.
+c) The accuracy of the model is equal on both training and test datasets.
+d) The model generalizes well to unseen data.
+
+Answer:  a) The model performs well on training data but poorly on test data.
+
+4. In the Top-Down Construction of a Decision Tree, which criterion is typically used to determine the best attribute for splitting?
+a) Information Gain
+b) Gini Index
+c) Both (a) and (b)
+d) Random Selection
+
+Answer:  c) Both (a) and (b)
+
+5. Which of the following is NOT a pruning method used to avoid overfitting in decision trees?
+a) Pre-Pruning
+b) Post-Pruning
+c) Random Forest Pruning
+d) Cost Complexity Pruning
+
+Answer:  c) Random Forest Pruning
+
+6. The minimum description length (MDL) principle is used to:
+a) Minimize tree depth while maintaining accuracy.
+b) Select the best attribute for splitting based on statistical testing.
+c) Ensure that the complexity of the hypothesis is justified by the data.
+d) Increase the number of attributes used in decision tree construction.
+
+Answer:  c) Ensure that the complexity of the hypothesis is justified by the data.
+
+7. Consider a dataset where an attribute has many distinct values (e.g., Zip Codes). What problem might arise in a decision tree, and how is it handled?
+a) The attribute may cause overfitting; this is handled by using gain ratio.
+b) The attribute may reduce entropy; this is handled by ignoring it.
+c) The attribute may always be selected first; this is handled by pre-pruning.
+d) The attribute will always have low information gain; this is handled by boosting.
+
+Answer:  a) The attribute may cause overfitting; this is handled by using gain ratio.
+
+8. The Gini index is used in which decision tree algorithm?
+a) ID3
+b) C4.5
+c) CART
+d) Apriori
+
+Answer:  c) CART
+
+9. Which of the following is a key difference between Pre-Pruning and Post-Pruning in decision trees?
+a) Pre-Pruning grows the full tree and then removes branches, whereas Post-Pruning stops growing early.
+b) Post-Pruning grows the full tree and then removes branches, whereas Pre-Pruning stops growing early.
+c) Both methods grow the full tree and then remove branches.
+d) Neither method affects overfitting.
+
+Answer:  b) Post-Pruning grows the full tree and then removes branches, whereas Pre-Pruning stops growing early.
+
+10. In the context of association rule mining, the term "confidence" is best described as:
+a) The fraction of transactions that contain the antecedent of the rule.
+b) The fraction of transactions that contain the antecedent and the consequent.
+c) The probability that a transaction containing the antecedent also contains the consequent.
+d) The probability of an itemset occurring in the dataset.
+
+Answer:  c) The probability that a transaction containing the antecedent also contains the consequent.
+
+1. In the Apriori algorithm, the main reason for using the Apriori property (downward closure property) is to:
+a) Reduce the number of candidate itemsets generated.
+b) Increase the confidence of association rules.
+c) Ensure that all frequent itemsets are discovered.
+d) Improve the entropy calculation in classification tasks.
+
+Answer:  a) Reduce the number of candidate itemsets generated.
+
+2. Which of the following statements about entropy in decision trees is TRUE?
+a) Entropy is always maximum (1) when all samples in a node belong to the same class.
+b) Entropy is minimum (0) when the classes in a node are perfectly mixed.
+c) Entropy measures the amount of uncertainty in class distribution at a node.
+d) Entropy cannot be used to select the best attribute for splitting.
+
+Answer:  c) Entropy measures the amount of uncertainty in class distribution at a node.
+
+3. In a decision tree, an attribute with a very large number of distinct values (e.g., "Student ID") is likely to:
+a) Always be selected as the best splitting attribute.
+b) Lead to overfitting by perfectly classifying training data.
+c) Reduce the overall accuracy of the decision tree.
+d) Improve the generalization ability of the decision tree.
+
+Answer:  b) Lead to overfitting by perfectly classifying training data.
+
+4. If a decision tree overfits the training data, which of the following is a valid way to reduce overfitting?
+a) Increase the depth of the tree to improve classification.
+b) Allow each leaf node to contain only one training sample.
+c) Apply pruning techniques such as pre-pruning or post-pruning.
+d) Use only categorical attributes for decision tree construction.
+
+Answer:  c) Apply pruning techniques such as pre-pruning or post-pruning.
+
+5. Which of the following is NOT a valid stopping condition for decision tree growth in the Top-Down Construction approach?
+a) All training examples at a node belong to the same class.
+b) There are no remaining attributes to split on.
+c) The maximum allowed depth of the tree is reached.
+d) The information gain of a potential split is greater than zero.
+
+Answer: d) The information gain of a potential split is greater than zero.
+
+6. Consider a decision tree built using the Gini index. What does a Gini index value of 0 at a node indicate?
+a) The node contains an equal number of positive and negative class samples.
+b) The node is perfectly pure, containing only one class.
+c) The node should be pruned to reduce overfitting.
+d) The node has a high level of impurity.
+
+Answer:  b) The node is perfectly pure, containing only one class.
+
+7. Which of the following methods is typically used in post-pruning decision trees?
+a) Cross-validation on a validation set.
+b) Using only the first attribute in the dataset for splitting.
+c) Removing nodes based on random selection.
+d) Applying the Apriori algorithm to remove redundant nodes.
+
+Answer:  a) Cross-validation on a validation set.
+
+8. In association rule mining, which of the following is TRUE about confidence and support?
+a) Support measures how often the rule is applicable in the dataset, while confidence measures the accuracy of the rule.
+b) Confidence measures how frequently an itemset appears, while support measures the strength of the rule.
+c) Both confidence and support must always be equal.
+d) A rule with high support always has high confidence.
+
+Answer:  a) Support measures how often the rule is applicable in the dataset, while confidence measures the accuracy of the rule.
+
+9. The Minimum Description Length (MDL) principle in decision tree pruning is used to:
+a) Ensure that the decision tree has maximum depth.
+b) Compare the complexity of a hypothesis with the number of exceptions it must remember.
+c) Increase the number of attributes used for splitting.
+d) Randomly remove nodes to reduce tree size.
+
+Answer:  b) Compare the complexity of a hypothesis with the number of exceptions it must remember.
+
+10. In rule generation for association mining, the confidence of a rule A → B is computed as:
+a) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐴
+)
+Support(A)
+Support(A∪B)
+​
+ 
+b) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐵
+)
+Support(B)
+Support(A∪B)
+​
+ 
+c) 
+Support
+(
+𝐴
+)
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support(A∪B)
+Support(A)
+​
+ 
+d) 
+Support
+(
+𝐵
+)
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support(A∪B)
+Support(B)
+​
+ 1. Consider the following dataset with class labels:
+Attribute A	Attribute B	Class Label
+Yes	High	+
+No	Low	-
+Yes	Medium	+
+No	High	-
+What is the entropy of the dataset before any split?
+
+a) 1.0
+b) 0.81
+c) 0.92
+d) 0.56
+
+Answer:  c) 0.92
+Explanation:
+Entropy formula:
+
+𝐻
+(
+𝐷
+)
+=
+−
+𝑝
++
+log
+⁡
+2
+𝑝
++
+−
+𝑝
+−
+log
+⁡
+2
+𝑝
+−
+H(D)=−p 
++
+​
+ log 
+2
+​
+ p 
++
+​
+ −p 
+−
+​
+ log 
+2
+​
+ p 
+−
+​
+ 
+For two positive (P) and two negative (N) examples:
+
+𝐻
+(
+𝐷
+)
+=
+−
+2
+4
+log
+⁡
+2
+2
+4
+−
+2
+4
+log
+⁡
+2
+2
+4
+=
+0.92
+H(D)=− 
+4
+2
+​
+ log 
+2
+​
+  
+4
+2
+​
+ − 
+4
+2
+​
+ log 
+2
+​
+  
+4
+2
+​
+ =0.92
+2. A dataset contains 1000 transactions. An itemset {Milk, Bread} appears in 200 transactions, and Milk appears in 500 transactions. What is the confidence of the rule "Milk → Bread"?
+a) 0.40
+b) 0.50
+c) 0.60
+d) 0.80
+
+Answer:  b) 0.50
+
+ Explanation:
+Confidence formula:
+
+Confidence
+(
+𝑋
+→
+𝑌
+)
+=
+Support
+(
+𝑋
+∪
+𝑌
+)
+Support
+(
+𝑋
+)
+Confidence(X→Y)= 
+Support(X)
+Support(X∪Y)
+​
+ 
+=
+200
+500
+=
+0.50
+= 
+500
+200
+​
+ =0.50
+3. Given a dataset, an attribute split results in the following class distribution at a node:
+Class	Count
++	30
+-	10
+What is the Gini index of this node?
+
+a) 0.30
+b) 0.40
+c) 0.50
+d) 0.375
+
+Answer:  d) 0.375
+
+ Explanation:
+Gini index formula:
+
+𝐺
+𝑖
+𝑛
+𝑖
+=
+1
+−
+(
+𝑝
++
+2
++
+𝑝
+−
+2
+)
+Gini=1−(p 
++
+2
+​
+ +p 
+−
+2
+​
+ )
+=
+1
+−
+(
+(
+30
+40
+)
+2
++
+(
+10
+40
+)
+2
+)
+=1−(( 
+40
+30
+​
+ ) 
+2
+ +( 
+40
+10
+​
+ ) 
+2
+ )
+=
+1
+−
+(
+0.5625
++
+0.0625
+)
+=
+0.375
+=1−(0.5625+0.0625)=0.375
+4. A decision tree has been trained, and the accuracy on the training set is 98%, but on the test set, it is only 75%. What is the most likely problem?
+a) The tree is too shallow.
+b) The tree has overfitted the training data.
+c) The dataset has high class imbalance.
+d) The Gini index should be used instead of entropy.
+
+Answer:  b) The tree has overfitted the training data.
+
+ Explanation:
+
+A large difference between training accuracy (98%) and test accuracy (75%) indicates overfitting.
+The tree has learned noise instead of general patterns.
+5. Consider a dataset where attribute A has three possible values: {X, Y, Z}. The entropy values after splitting on A are:
+𝐻
+(
+𝐷
+𝑋
+)
+=
+0.5
+H(D 
+X
+​
+ )=0.5
+𝐻
+(
+𝐷
+𝑌
+)
+=
+0.8
+H(D 
+Y
+​
+ )=0.8
+𝐻
+(
+𝐷
+𝑍
+)
+=
+0.3
+H(D 
+Z
+​
+ )=0.3
+The proportions of the dataset for each value are:
+
+∣
+𝐷
+𝑋
+∣
+=
+40
+∣D 
+X
+​
+ ∣=40, 
+∣
+𝐷
+𝑌
+∣
+=
+30
+∣D 
+Y
+​
+ ∣=30, 
+∣
+𝐷
+𝑍
+∣
+=
+30
+∣D 
+Z
+​
+ ∣=30.
+What is the Information Gain (IG) after splitting on A, if the original dataset entropy was 0.9?
+
+a) 0.32
+b) 0.18
+c) 0.45
+d) 0.27
+
+Answer:  d) 0.27
+
+ Explanation:
+
+𝐼
+𝐺
+(
+𝐴
+)
+=
+𝐻
+(
+𝐷
+)
+−
+∑
+𝑖
+∣
+𝐷
+𝑖
+∣
+∣
+𝐷
+∣
+𝐻
+(
+𝐷
+𝑖
+)
+IG(A)=H(D)− 
+i
+∑
+​
+  
+∣D∣
+∣D 
+i
+​
+ ∣
+​
+ H(D 
+i
+​
+ )
+=
+0.9
+−
+(
+40
+100
+×
+0.5
++
+30
+100
+×
+0.8
++
+30
+100
+×
+0.3
+)
+=0.9−( 
+100
+40
+​
+ ×0.5+ 
+100
+30
+​
+ ×0.8+ 
+100
+30
+​
+ ×0.3)
+=
+0.9
+−
+(
+0.2
++
+0.24
++
+0.09
+)
+=
+0.27
+=0.9−(0.2+0.24+0.09)=0.27
+Conceptual Questions
+6. Which of the following is TRUE about pre-pruning in decision trees?
+a) It prevents overfitting by stopping tree growth early.
+b) It removes unnecessary nodes after the tree is fully grown.
+c) It always improves accuracy.
+d) It is more effective than post-pruning in all cases.
+
+Answer:  a) It prevents overfitting by stopping tree growth early.
+
+7. If an itemset {Bread, Butter} has high support but low confidence, what does it mean?
+a) The items are frequently purchased together, but not always.
+b) The items are rarely purchased together.
+c) The rule "Bread → Butter" is a strong association rule.
+d) The support of Butter is also high.
+
+Answer:  a) The items are frequently purchased together, but not always.
+
+8. Which of the following is NOT a property of an ideal attribute for splitting in a decision tree?
+a) It should maximize information gain.
+b) It should have high entropy.
+c) It should reduce impurity in child nodes.
+d) It should generalize well to unseen data.
+
+Answer:  b) It should have high entropy.
+
+9. A decision tree is constructed on a dataset where 95% of the samples belong to Class A and 5% to Class B. The resulting tree predicts Class A for almost all test cases. What issue is likely occurring?
+a) Overfitting
+b) Underfitting
+c) Class Imbalance
+d) Irrelevant Features
+
+Answer:  c) Class Imbalance
+
+ Explanation:
+
+The model is biased toward the majority class (Class A).
+Techniques like resampling, SMOTE, or adjusting decision thresholds can help.
+10. In association rule mining, what is the purpose of the Lift measure?
+a) It determines how often two items appear together in a dataset.
+b) It compares the confidence of a rule with expected confidence under independence.
+c) It ensures that all frequent itemsets are discovered.
+d) It is used only when confidence is very low.
+
+Answer:  b) It compares the confidence of a rule with expected confidence under independence.
+
+ Formula:
+
+𝐿
+𝑖
+𝑓
+𝑡
+(
+𝐴
+→
+𝐵
+)
+=
+Confidence
+(
+𝐴
+→
+𝐵
+)
+Support
+(
+𝐵
+)
+Lift(A→B)= 
+Support(B)
+Confidence(A→B)
+​
+ 1. In the Apriori algorithm, the main reason for using the Apriori property (downward closure property) is to:
+a) Reduce the number of candidate itemsets generated.
+b) Increase the confidence of association rules.
+c) Ensure that all frequent itemsets are discovered.
+d) Improve the entropy calculation in classification tasks.
+
+Answer:  a) Reduce the number of candidate itemsets generated.
+
+2. Which of the following statements about entropy in decision trees is TRUE?
+a) Entropy is always maximum (1) when all samples in a node belong to the same class.
+b) Entropy is minimum (0) when the classes in a node are perfectly mixed.
+c) Entropy measures the amount of uncertainty in class distribution at a node.
+d) Entropy cannot be used to select the best attribute for splitting.
+
+Answer:  c) Entropy measures the amount of uncertainty in class distribution at a node.
+
+3. In a decision tree, an attribute with a very large number of distinct values (e.g., "Student ID") is likely to:
+a) Always be selected as the best splitting attribute.
+b) Lead to overfitting by perfectly classifying training data.
+c) Reduce the overall accuracy of the decision tree.
+d) Improve the generalization ability of the decision tree.
+
+Answer:  b) Lead to overfitting by perfectly classifying training data.
+
+4. If a decision tree overfits the training data, which of the following is a valid way to reduce overfitting?
+a) Increase the depth of the tree to improve classification.
+b) Allow each leaf node to contain only one training sample.
+c) Apply pruning techniques such as pre-pruning or post-pruning.
+d) Use only categorical attributes for decision tree construction.
+
+Answer:  c) Apply pruning techniques such as pre-pruning or post-pruning.
+
+5. Which of the following is NOT a valid stopping condition for decision tree growth in the Top-Down Construction approach?
+a) All training examples at a node belong to the same class.
+b) There are no remaining attributes to split on.
+c) The maximum allowed depth of the tree is reached.
+d) The information gain of a potential split is greater than zero.
+
+Answer:  d) The information gain of a potential split is greater than zero.
+
+6. Consider a decision tree built using the Gini index. What does a Gini index value of 0 at a node indicate?
+a) The node contains an equal number of positive and negative class samples.
+b) The node is perfectly pure, containing only one class.
+c) The node should be pruned to reduce overfitting.
+d) The node has a high level of impurity.
+
+Answer:  b) The node is perfectly pure, containing only one class.
+
+7. Which of the following methods is typically used in post-pruning decision trees?
+a) Cross-validation on a validation set.
+b) Using only the first attribute in the dataset for splitting.
+c) Removing nodes based on random selection.
+d) Applying the Apriori algorithm to remove redundant nodes.
+
+Answer:  a) Cross-validation on a validation set.
+
+8. In association rule mining, which of the following is TRUE about confidence and support?
+a) Support measures how often the rule is applicable in the dataset, while confidence measures the accuracy of the rule.
+b) Confidence measures how frequently an itemset appears, while support measures the strength of the rule.
+c) Both confidence and support must always be equal.
+d) A rule with high support always has high confidence.
+
+Answer:  a) Support measures how often the rule is applicable in the dataset, while confidence measures the accuracy of the rule.
+
+9. The Minimum Description Length (MDL) principle in decision tree pruning is used to:
+a) Ensure that the decision tree has maximum depth.
+b) Compare the complexity of a hypothesis with the number of exceptions it must remember.
+c) Increase the number of attributes used for splitting.
+d) Randomly remove nodes to reduce tree size.
+
+Answer:  b) Compare the complexity of a hypothesis with the number of exceptions it must remember.
+
+10. In rule generation for association mining, the confidence of a rule A → B is computed as:
+a) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐴
+)
+Support(A)
+Support(A∪B)
+​
+ 
+b) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐵
+)
+Support(B)
+Support(A∪B)
+​
+ 
+c) 
+Support
+(
+𝐴
+)
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support(A∪B)
+Support(A)
+​
+ 
+d) 
+Support
+(
+𝐵
+)
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support(A∪B)
+Support(B)
+​
+ 
+
+Answer: ✅ a) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐴
+)
+Support(A)
+Support(A∪B)
+​
+
+If Lift > 1, A and B occur together more often than expected by chance.
+
+Answer:  a) 
+Support
+(
+𝐴
+∪
+𝐵
+)
+Support
+(
+𝐴
+)
+Support(A)
+Support(A∪B)
+
+
+Lift (1.2) > 1 means a slight positive correlation.
+10. A decision tree is built using the Gini index. The first attribute chosen for splitting has a very low Gini impurity. What does this imply?
+a) The attribute perfectly separates the classes
+b) The attribute is not useful for classification
+c) The attribute should be ignored
+d) The tree is overfitting
+
+Answer:  a) The attribute perfectly separates the classes
+ Explanation:
+A low Gini index means high purity, meaning the split is highly effective.
+​

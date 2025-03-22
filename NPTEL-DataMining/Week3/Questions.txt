@@ -1,0 +1,780 @@
+1. In a classification problem, class conditional probability refers to:
+A) The probability of an instance belonging to a class given its features
+B) The prior probability of a class occurring in the dataset
+C) The probability of a class occurring given the dataset
+D) The probability of an instance belonging to multiple classes
+
+Answer: A) The probability of an instance belonging to a class given its features
+
+2. The optimal decision boundary B in Bayes classification is chosen such that:*
+A) It minimizes the classification error
+B) It maximizes the likelihood of the data
+C) It ensures equal probability for all classes
+D) It is placed at an arbitrary position
+
+Answer: A) It minimizes the classification error
+
+3. What is the relationship between prior, likelihood, and posterior probabilities in Bayes' theorem?
+A) Posterior = Prior × Likelihood
+B) Posterior = Likelihood × Prior / Evidence
+C) Likelihood = Prior × Posterior
+D) Posterior = Prior / Likelihood
+
+Answer: B) Posterior = Likelihood × Prior / Evidence
+
+4. In the Maximum A Posteriori (MAP) approach, an instance is classified into the class that has:
+A) The highest prior probability
+B) The highest likelihood probability
+C) The highest posterior probability
+D) The lowest classification error
+
+Answer: C) The highest posterior probability
+
+5. The Naïve Bayes classifier assumes that features are:
+A) Completely independent
+B) Conditionally independent given the class
+C) Dependent on each other
+D) Randomly correlated
+
+Answer: B) Conditionally independent given the class
+
+6. Which of the following is a major limitation of the Naïve Bayes classifier?
+A) It cannot handle missing data
+B) It assumes feature independence, which may not hold in reality
+C) It does not use probability calculations
+D) It always requires a large training dataset
+
+Answer: B) It assumes feature independence, which may not hold in reality
+
+7. If two classes have normal distributions with different means but the same variance, what will the decision boundary look like?
+A) A nonlinear curve
+B) A parabola
+C) A straight line
+D) A circle
+
+Answer: C) A straight line
+
+8. In the Multivariate Bayesian Classifier, what is the role of the Mahalanobis distance?
+A) To measure the distance between a point and a distribution
+B) To compute the Euclidean distance between two points
+C) To determine the prior probability of a class
+D) To normalize the feature values
+
+Answer: A) To measure the distance between a point and a distribution
+
+9. Which of the following statements about conditional independence is TRUE?
+A) Two events are conditionally independent given a third event if their probabilities remain unchanged when the third event is known
+B) Two events are always independent if they occur at different times
+C) Conditional independence means one event causes another
+D) If two events are independent, they must also be conditionally independent
+
+Answer: A) Two events are conditionally independent given a third event if their probabilities remain unchanged when the third event is known
+
+10. In Naïve Bayes smoothing (Laplace smoothing), what is the main purpose?
+A) To improve classification accuracy
+B) To prevent probabilities from becoming zero when a feature value is missing in training data
+C) To increase computational efficiency
+D) To make the classifier deterministic
+
+Answer: B) To prevent probabilities from becoming zero when a feature value is missing in training data
+
+
+11. What is the main advantage of Bayes classifiers?
+A) They can work with small datasets effectively
+B) They do not require training data
+C) They do not assume any probabilistic model
+D) They can only handle linearly separable data
+
+Answer: A) They can work with small datasets effectively
+
+12. In a two-class Bayesian classification problem, if Type I and Type II errors have different costs, then the decision boundary will:
+A) Be equidistant from both class distributions
+B) Shift towards the class with a lower prior probability
+C) Shift towards the class with the lower cost of misclassification
+D) Be completely unaffected
+
+Answer: C) Shift towards the class with the lower cost of misclassification
+
+13. The posterior probability in Bayes' theorem is:
+A) The probability of a class given the observed data
+B) The probability of observing a data point given a class
+C) The probability of a class occurring in the dataset
+D) The total probability of observing the data
+
+Answer: A) The probability of a class given the observed data
+
+14. Which of the following statements about prior probability is FALSE?
+A) It is the probability of a class before seeing the data
+B) It can be estimated based on historical data
+C) It depends on the observed features of the data point
+D) It influences the posterior probability in Bayes' theorem
+
+Answer: C) It depends on the observed features of the data point
+
+15. Which of the following classifiers does NOT assume normal distribution of data?
+A) Gaussian Naïve Bayes
+B) Multivariate Bayes Classifier
+C) k-Nearest Neighbors (k-NN)
+D) Linear Discriminant Analysis (LDA)
+
+Answer: C) k-Nearest Neighbors (k-NN)
+
+16. In a multivariate Bayesian classifier, how is the decision boundary determined when class distributions have different variances?
+A) It remains a straight line
+B) It becomes a parabolic curve
+C) It turns into a circular boundary
+D) It does not change
+
+Answer: B) It becomes a parabolic curve
+
+17. Which of the following scenarios would violate the independence assumption in Naïve Bayes?
+A) A dataset where age and salary are used to classify loan approvals
+B) A dataset where weather conditions and stock market trends are used to predict sales
+C) A dataset where word frequencies in emails are used for spam detection
+D) A dataset where the weight and height of a person are used for classification
+
+Answer: D) A dataset where the weight and height of a person are used for classification
+
+18. When computing the posterior probability using Naïve Bayes, why do we often ignore the denominator (evidence term)?
+A) Because it remains constant for all classes
+B) Because it is difficult to calculate
+C) Because it does not contribute to classification
+D) Because it is equal to 1
+
+Answer: A) Because it remains constant for all classes
+
+19. Which of the following distance measures is most appropriate for comparing a data point to a probability distribution in Bayesian classification?
+A) Euclidean Distance
+B) Manhattan Distance
+C) Mahalanobis Distance
+D) Minkowski Distance
+
+Answer: C) Mahalanobis Distance
+
+20. If a Naïve Bayes classifier assigns zero probability to a feature value not seen in the training data, which technique can be used to fix this?
+A) Feature scaling
+B) Dimensionality reduction
+C) Laplace Smoothing
+D) Feature extraction
+
+Answer: C) Laplace Smoothing
+
+21. Which of the following correctly expresses the Bayes error in classification?
+A) The expected classification error when the optimal Bayes classifier is used
+B) The error due to an incorrect assumption of feature independence
+C) The total probability of a misclassified instance in Naïve Bayes
+D) The sum of Type I and Type II errors in any classifier
+
+Answer: A) The expected classification error when the optimal Bayes classifier is used
+
+22. Consider a two-class classification problem where 
+𝑃
+(
+𝐶
+1
+)
+=
+0.6
+P(C 
+1
+​
+ )=0.6, 
+𝑃
+(
+𝐶
+2
+)
+=
+0.4
+P(C 
+2
+​
+ )=0.4, and the likelihood functions for feature 
+𝑋
+X are given as:
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+=
+1
+2
+𝜋
+𝑒
+−
+𝑋
+2
+/
+2
+,
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+=
+1
+2
+𝜋
+𝑒
+−
+(
+𝑋
+−
+1
+)
+2
+/
+2
+P(X∣C 
+1
+​
+ )= 
+2π
+​
+ 
+1
+​
+ e 
+−X 
+2
+ /2
+ ,P(X∣C 
+2
+​
+ )= 
+2π
+​
+ 
+1
+​
+ e 
+−(X−1) 
+2
+ /2
+ 
+Which decision rule should be applied for classification?
+
+A) Choose 
+𝐶
+1
+C 
+1
+​
+  if 
+𝑃
+(
+𝐶
+1
+∣
+𝑋
+)
+>
+𝑃
+(
+𝐶
+2
+∣
+𝑋
+)
+P(C 
+1
+​
+ ∣X)>P(C 
+2
+​
+ ∣X), otherwise choose 
+𝐶
+2
+C 
+2
+​
+ 
+B) Choose 
+𝐶
+1
+C 
+1
+​
+  if 
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+>
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+P(X∣C 
+1
+​
+ )>P(X∣C 
+2
+​
+ ), otherwise choose 
+𝐶
+2
+C 
+2
+​
+ 
+C) Choose 
+𝐶
+1
+C 
+1
+​
+  if 
+𝑃
+(
+𝐶
+1
+)
+>
+𝑃
+(
+𝐶
+2
+)
+P(C 
+1
+​
+ )>P(C 
+2
+​
+ ), otherwise choose 
+𝐶
+2
+C 
+2
+​
+ 
+D) Choose 
+𝐶
+1
+C 
+1
+​
+  if 
+𝑃
+(
+𝐶
+1
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+>
+𝑃
+(
+𝐶
+2
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+P(C 
+1
+​
+ )P(X∣C 
+1
+​
+ )>P(C 
+2
+​
+ )P(X∣C 
+2
+​
+ ), otherwise choose 
+𝐶
+2
+C 
+2
+​
+ 
+
+Answer: D) Choose 
+𝐶
+1
+C 
+1
+​
+  if 
+𝑃
+(
+𝐶
+1
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+>
+𝑃
+(
+𝐶
+2
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+P(C 
+1
+​
+ )P(X∣C 
+1
+​
+ )>P(C 
+2
+​
+ )P(X∣C 
+2
+​
+ ), otherwise choose 
+𝐶
+2
+C 
+2
+​
+ 
+
+23. In a Bayesian classifier, if the class distributions overlap significantly, which of the following statements is TRUE?
+A) The classifier will have high variance and low bias
+B) The classification decision will be highly uncertain in the overlapping region
+C) The posterior probability of each class will always be equal
+D) The decision boundary will always be linear
+
+Answer: B) The classification decision will be highly uncertain in the overlapping region
+
+24. Consider a binary classification problem where feature vectors 
+𝑋
+X are normally distributed for both classes, but with different covariance matrices. The optimal decision boundary is:
+A) A straight line
+B) A quadratic curve
+C) A hyperplane
+D) A sigmoid curve
+
+Answer: B) A quadratic curve
+
+25. When applying Naïve Bayes classification to a text classification problem, how are the conditional probabilities typically estimated?
+A) Using kernel density estimation
+B) By assuming a uniform distribution for word occurrences
+C) By computing word frequencies and applying Laplace smoothing
+D) By using PCA to reduce feature dimensionality
+
+Answer: C) By computing word frequencies and applying Laplace smoothing
+
+26. The Mahalanobis distance is preferred over Euclidean distance in Bayesian classification because:
+A) It accounts for the variance and correlation of features
+B) It is computationally more efficient
+C) It assumes all features are independent
+D) It is equivalent to the Manhattan distance
+
+Answer: A) It accounts for the variance and correlation of features
+
+27. A dataset consists of three classes 
+𝐶
+1
+,
+𝐶
+2
+,
+𝐶
+3
+C 
+1
+​
+ ,C 
+2
+​
+ ,C 
+3
+​
+  with prior probabilities 
+𝑃
+(
+𝐶
+1
+)
+=
+0.3
+P(C 
+1
+​
+ )=0.3, 
+𝑃
+(
+𝐶
+2
+)
+=
+0.4
+P(C 
+2
+​
+ )=0.4, and 
+𝑃
+(
+𝐶
+3
+)
+=
+0.3
+P(C 
+3
+​
+ )=0.3. Suppose a new instance has feature vector 
+𝑋
+X with the following class conditional probabilities:
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+=
+0.5
+,
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+=
+0.2
+,
+𝑃
+(
+𝑋
+∣
+𝐶
+3
+)
+=
+0.3
+P(X∣C 
+1
+​
+ )=0.5,P(X∣C 
+2
+​
+ )=0.2,P(X∣C 
+3
+​
+ )=0.3
+Which class should the instance be assigned to based on Maximum A Posteriori (MAP) rule?
+
+A) 
+𝐶
+1
+C 
+1
+​
+ 
+B) 
+𝐶
+2
+C 
+2
+​
+ 
+C) 
+𝐶
+3
+C 
+3
+​
+ 
+D) Cannot be determined
+
+Answer: A) 
+𝐶
+1
+C 
+1
+​
+ 
+
+Explanation: Compute posterior probabilities:
+
+𝑃
+(
+𝐶
+1
+∣
+𝑋
+)
+=
+𝑃
+(
+𝐶
+1
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+𝑃
+(
+𝑋
+)
+P(C 
+1
+​
+ ∣X)= 
+P(X)
+P(C 
+1
+​
+ )P(X∣C 
+1
+​
+ )
+​
+ 
+Since denominator 
+𝑃
+(
+𝑋
+)
+P(X) is constant for all classes, we compare numerators:
+
+𝑃
+(
+𝐶
+1
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+1
+)
+=
+0.3
+×
+0.5
+=
+0.15
+P(C 
+1
+​
+ )P(X∣C 
+1
+​
+ )=0.3×0.5=0.15
+𝑃
+(
+𝐶
+2
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+2
+)
+=
+0.4
+×
+0.2
+=
+0.08
+P(C 
+2
+​
+ )P(X∣C 
+2
+​
+ )=0.4×0.2=0.08
+𝑃
+(
+𝐶
+3
+)
+𝑃
+(
+𝑋
+∣
+𝐶
+3
+)
+=
+0.3
+×
+0.3
+=
+0.09
+P(C 
+3
+​
+ )P(X∣C 
+3
+​
+ )=0.3×0.3=0.09
+Since 0.15 is the highest, assign to 
+𝐶
+1
+C 
+1
+​
+ .
+
+28. Which of the following statements about Naïve Bayes is FALSE?
+A) It assumes conditional independence of features given the class
+B) It performs well on high-dimensional data despite its assumptions
+C) It can estimate joint probability distributions of all features accurately
+D) It is commonly used in spam classification and sentiment analysis
+
+Answer: C) It can estimate joint probability distributions of all features accurately
+
+29. Given a dataset where the features follow a Gaussian distribution and the class priors are equal, which classifier is equivalent to the Naïve Bayes classifier?
+A) Logistic Regression
+B) Linear Discriminant Analysis (LDA)
+C) k-Nearest Neighbors
+D) Decision Tree
+
+Answer: B) Linear Discriminant Analysis (LDA)
+
+30. Which of the following is a correct statement about the curse of dimensionality in Bayesian classification?
+A) As the number of dimensions increases, the required sample size increases exponentially
+B) The Bayesian classifier is not affected by high-dimensional spaces
+C) The Naïve Bayes classifier suffers the most from the curse of dimensionality
+D) Reducing dimensionality using PCA will always improve classification performance
+
+Answer: A) As the number of dimensions increases, the required sample size increases exponentially
